@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/functions.js') }}"></script>
+    <title>Process number</title>
+</head>
+<body>
+<div class="mask" id="dialog">
+    <p id="dialog-text">"Welcome"</p>
+    <button id="close" onclick="closeDialog()">Close</button>
+</div>
+<div>
+    <input id="number1" class="input" type="number">
+    <input id="number2" class="input" type="number">
+    <button id="sum" onclick="sum()">Add values</button>
+</div>
+<div id="results"></div>
+
+</body>
+</html>

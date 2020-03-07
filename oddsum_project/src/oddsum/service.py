@@ -14,6 +14,6 @@ def oddsum():
         try:
             return str(OddSum.sum(int(number1), int(number2)))
         except OddException as exception:
-            abort(400, str(exception))
+            return str(exception), 400
         except ValueError as exception:
-            abort(400, "oddsum must be called with two integers")
+            return "oddsum must be called with two integers", 400
